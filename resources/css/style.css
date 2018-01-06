@@ -1,0 +1,233 @@
+html {
+  font-family: "Hind Siliguri";
+  font-size: 20px;
+}
+
+.flex-container {
+  display: flex;
+  width: 100%;
+}
+
+.mobile {
+  display: none;
+}
+
+header {
+  height: 64px;
+  position: fixed;
+  z-index: 20;
+  background-color: white;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+}
+
+.logo img {
+  height: 32px;
+}
+
+.logo span {
+  font-size: 1rem;
+}
+
+header nav ul{
+  list-style: none;
+  display: flex;
+  padding-right: 24px;
+}
+
+header nav a{
+  color: black;
+  text-decoration: none;
+  padding-left: 16px;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 450px){
+  .desktop {
+    display: none;
+  }
+ .mobile ul {
+   list-style: none;
+   display: flex;
+ }
+}
+
+/* banner section */
+
+
+.banner {
+  padding-top: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left{
+  width: 60%;
+  padding: 32px 24px;
+  border: 2px solid black;
+}
+
+.banner img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  border: 2px solid black;
+}
+
+button {
+  background-color: hsla(0, 0%, 25%, 1);
+  display: flex;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 6rem;
+  text-align: center;
+  line-height: 36px;
+  font-size: 1rem;
+  padding: 8px 7rem;
+  width: 20rem;
+  box-shadow: none;
+}
+
+.banner h1 {
+  color: hsla(0, 0%, 25%, 1);
+  font-size: 2.5rem;
+  margin-top: 6rem;
+}
+
+.banner p {
+  font-size: 1.4rem;
+  margin-top: 0rem;
+}
+
+/* information section */
+
+.information {
+  display: flex;
+}
+
+.information img {
+  max-width: 100%;
+  background-color: white;
+}
+
+.newsitem {
+  border: 1px solid black;
+  display: flex;
+  padding: 20px;
+}
+
+.newsitem img {
+  width: 35%;
+  height: 35%
+}
+
+.newsitem .text {
+  width: 65%;
+}
+
+.grey {
+  background-color: hsla(0, 0%, 85%, 1);
+}
+
+/* Courses section */
+
+.coursesection {
+ width: 100%;
+ text-align: center;
+}
+
+.coursesection .title span{
+  font-size: 2rem;
+}
+
+.courses {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 3.5rem 1rem 3.5rem;
+  width: 100%;
+  border: 2px solid red;
+}
+
+.course {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25%;
+  margin: 1rem;
+}
+
+.course img {
+  width: 100%;
+}
+
+/* thesis exhibit section */
+
+.thesisexhibit {
+  width: 100%;
+  text-align: center;
+}
+
+.thesisexhibit .title span{
+  font-size: 2rem;
+}
+
+
+video {
+  width: 100%;
+}
+
+.exhibit {
+  display: flex;
+}
+
+.exhibit img {
+  padding: 16px;
+}
+
+.exhibit .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+/* footer */
+
+Footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer span {
+  margin-left: 24px;
+}
+
+Footer ul {
+  display: flex;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer nav a{
+  color: black;
+  text-decoration: none;
+  margin-left: 16px;
+  margin-right: 24px;
+}
