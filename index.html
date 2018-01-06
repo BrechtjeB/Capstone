@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri:300,400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="./resources/css/reset.css">
     <link rel="stylesheet" href="./resources/css/style.css">
     <title>Colmar academy</title>
@@ -8,26 +9,26 @@
   <body>
 
     <!-- header-->
-    <header>
+    <header class ="flex-container">
       <div class="logo">
         <img src="..//capstone/resources/images/ic-logo.svg">
         <span class="desktop"><b>COLMAR</b>ACADEMY</span>
       </div>
       <nav class="desktop">
         <ul>
-          <a href="#"><li>On campus</li></a>
-          <a href="#"><li>Online</li></a>
-          <a href="#"><li>For companies</li></a>
-          <a href="#"><li>Sign in</li></a>
+          <li><a href="#">On campus</a></li>
+          <li><a href="#">Online</a></li>
+          <li><a href="#">For companies</a></li>
+          <li><a href="#">Sign in</a></li>
         </ul>
       </nav>
 
       <nav class="mobile">
         <ul>
-        <a href="#"><li><img src="..//capstone/resources/images/ic-logo.svg"></li></a>
-        <a href="#"><li><img src="..//capstone/resources/images/ic-on-campus.svg"></li></a>
-        <a href="#"><li><img src="..//capstone/resources/images/ic-online.svg"></li></a>
-        <a href="#"><li><img src="..//capstone/resources/images/ic-login.svg"></li></a>
+        <a href="#"><li><img src="..//capstone/resources/images/ic-logo.svg"/></li></a>
+        <a href="#"><li><img src="..//capstone/resources/images/ic-on-campus.svg"/></li></a>
+        <a href="#"><li><img src="..//capstone/resources/images/ic-online.svg"/></li></a>
+        <a href="#"><li><img src="..//capstone/resources/images/ic-login.svg"/></li></a>
       </ul>
       </nav>
 
@@ -35,83 +36,95 @@
 
     <!-- main content-->
     <!-- banner-->
-      <div class="flex container banner">
-        <img src="..//capstone/resources/images/banner.jpg" alt="students reading at table">
-        <div class="start">
-          <h1>Learn something new everyday</h1>
-          <p>Lorem ipsum dolor sit amet, consecteturadipiscing elit</p>
-          <div class="button">
-            <span>Start here</span>
-          </div>
-        </div>
+    <div class="banner grey">
+      <div class="left">
+        <img src="..//capstone/resources/images/banner.jpg" alt="students reading at table"/>
+    </div>
+    <div class="right">
+          <h1>Learn something </br> new everyday</h1>
+          <p>Lorem ipsum dolor sit amet,</br> consectetur adipiscing elit</p>
+          <button>Start here</button>
+      </div>
+    </div>
       </div>
 
     <!-- information section -->
 <div class="information">
-  <div class="quote" class="desktop">
-    <img src="..//capstone/resources/images/information-main.jpg" alt="student reading">
-    <p></p>
-    <p class="name"></p>
+  <div class="left desktop">
+    <img src="..//capstone/resources/images/information-main.jpg" alt="student reading"/>
+    <h2>It doesn't hurt to keep practicing</h2>
+    <p>"Curabitur vitae libero in ipsum portritor consequat. Aliquam et comodo lectus, nec
+      consequat neque. Sed non accumsan urna. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."<p>
+    <p class="name">Emanuel, Sr Strategist at Hiring.com</p>
   </div>
-  <div class="news">
+  <div class="right">
     <div class="newsitem">
-      <img class="desktop" src="..//capstone/resources/images/information-orientation.jpg" alt="helicopter view of campus">
-      <img class="mobile" src="..//capstone/resources/images/information-orientation-mobile.jpg" alt="helicopter view of campus">
+      <img class="desktop" src="..//capstone/resources/images/information-orientation.jpg" alt="helicopter view of campus"/>
+      <img class="mobile" src="..//capstone/resources/images/information-orientation-mobile.jpg" alt="helicopter view of campus"/>
+      <div class="text">
       <h3>Orientation date</h3>
       <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
       <a href="#">Read more></a>
     </div>
+    </div>
     <div class="newsitem">
-      <img class="desktop" src="..//capstone/resources/images/information-campus.jpg" alt="corner in library">
-      <img class="mobile" src="..//capstone/resources/images/information-campus-mobile.jpg" alt="corner in library">
+      <img class="desktop" src="..//capstone/resources/images/information-campus.jpg" alt="corner in library"/>
+      <img class="mobile" src="..//capstone/resources/images/information-campus-mobile.jpg" alt="corner in library"/>
+      <div class="text">
       <h3>Our Campus</h3>
       <p>Find which campus is close by you</p>
       <a href="#">Read more></a>
     </div>
-    <div class="newsitem">
-      <img class="desktop" src="..//capstone/resources/images/information-guest-lecture.jpg" alt="Oliver Sack">
-      <img class="mobile" src="..//capstone/resources/images/information-guest-lecture-mobile.jpg" alt="Oliver Sack">
+    </div>
+    <div class="newsitem grey">
+      <img class="desktop" src="..//capstone/resources/images/information-guest-lecture.jpg" alt="Oliver Sack"/>
+      <img class="mobile" src="..//capstone/resources/images/information-guest-lecture-mobile.jpg" alt="Oliver Sack"/>
+      <div class="text">
       <h3>Our guest lecture</h3>
       <p>Join a keynote with Oliver Sack about music in medical treatment</p>
       <a href="#">Read more></a>
     </div>
+    </div>
   </div>
 </div>
     <!-- courses -->
-<div class="flex container">
-<div class="courses">
+<div class="grey coursesection">
+  <div class="title">
+  <span>Start learning</span>
+</div>
+<div class="courses flex-container">
   <div class="course">
-    <img class="desktop" src="..//capstone/resources/images/course-software.jpg" alt="computer">
+    <img class="desktop" src="..//capstone/resources/images/course-software.jpg" alt="computer"/>
     <h2>Software engineering</h2>
     <h3 class="desktop">Courses</h3>
     <span class="desktop">Web Development, Mobile Development, iOT, APIs</span>
   </div>
   <div class="course">
-    <img class="desktop" src="..//capstone/resources/images/course-computer-art.jpg" alt="Mobile screen with cup of coffee">
+    <img class="desktop" src="..//capstone/resources/images/course-computer-art.jpg" alt="Mobile screen with cup of coffee"/>
     <h2>Computer art</h2>
     <h3 class="desktop">Courses</h3>
     <span class="desktop">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer animation</span>
   </div>
   <div class="course">
-    <img class="desktop" src="..//capstone/resources/images/course-design.jpg" alt="woman holding camera">
+    <img class="desktop" src="..//capstone/resources/images/course-design.jpg" alt="woman holding camera"/>
     <h2>Design</h2>
     <h3 class="desktop">Courses</h3>
     <span class="desktop">User Experience Design, User Research, Visual Design</span>
   </div>
   <div class="course">
-    <img class="desktop" src="..//capstone/resources/images/course-data.jpg" alt="laptop">
+    <img class="desktop" src="..//capstone/resources/images/course-data.jpg" alt="laptop"/>
     <h2>Data</h2>
     <h3 class="desktop">Courses</h3>
     <span class="desktop">Data Science, Big Data, SQL, Data Visualization</span>
   </div>
   <div class="course">
-    <img class="desktop" src="..//capstone/resources/images/course-business.jpg" alt="chess game">
+    <img class="desktop" src="..//capstone/resources/images/course-business.jpg" alt="chess game"/>
     <h2>Business</h2>
     <h3 class="desktop">Courses</h3>
     <span class="desktop">Product Development, Business Development, Startup</span>
   </div>
   <div class="course">
-    <img class="desktop" src="..//capstone/resources/images/course-marketing.jpg" alt="watch">
+    <img class="desktop" src="..//capstone/resources/images/course-marketing.jpg" alt="watch"/>
     <h2>Marketing</h2>
     <h3 class="desktop">Courses</h3>
     <span class="desktop">Analytics, Content Marketing, Mobile Marketing</span>
@@ -119,9 +132,12 @@
 </div>
 </div>
     <!-- thesis exhibit -->
-<div class="flex container">
-  <h1>Exhibit</h1>
-  <div class="desktop container">
+<div class="thesisexhibit">
+  <div class="title">
+  <h1>Thesis exhibit</h1>
+</div>
+<div class="thesis flex-container">
+  <div class="left desktop">
     <video src="..//capstone/resources/videos/thesis.mp4" height="auto" width="60%" controls>Video not supported</video>
     <h2>Reimagine urban</h2>
     <p>"Curabitar virea libero in ipsum portitor consequat. Aliquam et comodo lectus, nec consequat neque.
@@ -129,23 +145,32 @@
     </p>
   </div>
   <video class="mobile" src="..//capstone/resources/videos/thesis.mp4" height="auto" width="60%" controls>Video not supported</video>
-  <div class="desktop exhibit">
-    <img src="..//capstone/resources/images/thesis-fisma.jpg" alt="hand drawing">
+<div class="right">
+  <div class="desktop exhibit grey">
+    <img src="..//capstone/resources/images/thesis-fisma.jpg" alt="hand drawing"/>
+    <div class="text">
     <h2>Fisma: design and prototype</h2>
     <span>Designer showcase of new prototype product</span>
   </div>
+  </div>
   <div class="desktop exhibit">
-    <img src="..//capstone/resources/images/thesis-now-and-then.jpg" alt="hand drawing">
+    <img src="..//capstone/resources/images/thesis-now-and-then.jpg" alt="hand drawing"/>
+    <div class="text">
     <h2>Now and then</h2>
     <span>Research study about New York</span>
   </div>
+  </div>
+  </div>
+</div>
     <!-- footer -->
 <footer>
   <span>&copy; Colmar academy. All rights reserved.</span>
-  <ul class="desktop">
+  <nav class="desktop">
+    <ul
     <a href="#"><li>Terms</li></a>
     <a href="#"><li>Privacy</li></a>
   </ul>
+</nav>
 </footer>
   </body>
 </html>
