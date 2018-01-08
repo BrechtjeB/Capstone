@@ -1,16 +1,28 @@
 html {
   font-family: "Hind Siliguri", "sans serif";
-  font-size: 16px;
 }
+
+@media only screen and (min-width: 561px){
+  .mobile {
+    display: none;
+  }
+ html {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 560px){
+  .desktop {
+    display: none;
+    }
+  }
+
 
 .flex-container {
   display: flex;
   width: 100%;
 }
 
-.mobile {
-  display: none;
-}
 
 h1, span, p, h2, h3 {
   color: RGB(41, 46, 51);
@@ -56,13 +68,11 @@ header nav a{
   font-size: 1rem;
 }
 
-@media only screen and (max-width: 450px){
-  .desktop {
-    display: none;
-  }
- .mobile ul {
-   list-style: none;
-   display: flex;
+@media only screen and (max-width: 560px){
+ header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
  }
 }
 
@@ -70,13 +80,17 @@ header nav a{
 
 .left{
   width: 60%;
-  padding: 32px 24px;
+  padding: 2rem 1.5rem;
 }
 
 .right {
   display: flex;
   flex-direction: column;
   width: 40%;
+}
+
+.grey {
+  background-color: RGB(175, 191, 255);
 }
 
 
@@ -90,8 +104,6 @@ header nav a{
   justify-content: space-between;
 }
 
-
-
 .banner img {
   max-width: 100%;
   max-height: 100%;
@@ -104,7 +116,6 @@ header nav a{
 
 .banner h1 {
   font-size: 2.5rem;
-  margin-top: 6rem;
 }
 
 .banner p {
@@ -112,16 +123,12 @@ header nav a{
   margin-top: 0rem;
 }
 
-.grey {
-  background-color: RGB(175, 191, 255);
-}
-
 button {
   background-color: RGB(178, 44, 36);
   display: flex;
   color: white;
   text-align: center;
-  line-height: 36px;
+  line-height: 2rem;
   font-size: 1.2rem;
   padding: 0.5rem 7rem;
   width: 20rem;
@@ -131,6 +138,37 @@ button {
 
 button:hover {
   background-color: RGB(255, 63, 52);
+}
+
+@media only screen and (max-width: 560px){
+  .banner {
+     flex-direction: column;
+  }
+  .left {
+    width: 100%;
+    padding: 0px 0px;
+  }
+  .right {
+    width: 100%;
+    padding: 2rem 2rem;
+  }
+
+  .banner .right {
+    justify-content: space-around;
+  }
+  .banner h1 {
+    font-size: 4rem;
+    margin-top: auto;
+  }
+  .banner p {
+    font-size: 2rem;
+    margin-top: 0rem;
+  }
+  button {
+    line-height: 2.75rem;
+    font-size: 2rem;
+    width: 25rem;
+  }
 }
 
 /* information section */
@@ -144,10 +182,14 @@ button:hover {
   background-color: white;
 }
 
+.information .right {
+  margin-top: 1rem;
+}
+
 .newsitem {
   display: flex;
   align-items: center;
-  padding: 2rem 1rem 1rem 1rem;
+  padding: 1rem 1rem;
 }
 
 .newsitem img {
@@ -166,12 +208,37 @@ button:hover {
 
 .newsitem a {
   font-size: 1.2rem;
-  color: blue;
+  color: RGB(178, 44, 36);
   text-decoration: none;
 }
 
 .name {
   font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 560px){
+  .newsitem {
+  display: block;
+  }
+  .newsitem img {
+    width: 100%;
+    height: auto;
+    margin: 1rem 0.5rem;
+  }
+  .newsitem .text {
+    width: 100%;
+    margin-left: 2rem;
+  }
+  .newsitem h3 {
+    font-size: 3rem;
+  }
+  .newsitem p{
+    font-size: 2rem;
+  }
+
+  .newsitem a {
+    font-size: 2rem;
+  }
 }
 
 
@@ -184,7 +251,7 @@ button:hover {
 
 .coursesection h1 {
   font-size: 2rem;
-  padding: 2rem 0rem 1rem 0rem;
+  padding: 2rem 0rem 0rem 0rem;
   margin-top: auto;
 }
 
@@ -222,6 +289,24 @@ button:hover {
   font-size: 1.2rem;
 }
 
+@media only screen and (max-width: 560px){
+  .coursesection {
+    background-color: white;
+  }
+  .coursesection h1 {
+    font-size: 3rem;
+  }
+  .courses {
+    display: block;
+  }
+  .courseinfo {
+    background-color: RGB(175, 191, 255);
+  }
+  .course {
+    margin: 4px 2rem;
+  }
+}
+
 /* thesis exhibit section */
 
 .thesisexhibit {
@@ -229,8 +314,10 @@ button:hover {
   text-align: center;
 }
 
-.thesisexhibit .title span{
-  font-size: 1.2rem;
+.thesisexhibit h1{
+  font-size: 2rem;
+  padding: 2rem 0rem 0rem 0rem;
+  margin-top: auto;
 }
 
 
@@ -256,6 +343,15 @@ video {
 
 .thesis h2, .thesis p {
   text-align: left;
+}
+
+@media only screen and (max-width: 560px){
+  .right.desktop {
+    display: none;
+  }
+  .flex-container {
+    display: block;
+  }
 }
 
 /* footer */
