@@ -1,6 +1,6 @@
 html {
-  font-family: "Hind Siliguri";
-  font-size: 20px;
+  font-family: "Hind Siliguri", "sans serif";
+  font-size: 16px;
 }
 
 .flex-container {
@@ -12,10 +12,14 @@ html {
   display: none;
 }
 
+h1, span, p, h2, h3 {
+  color: RGB(41, 46, 51);
+}
+
 header {
   height: 64px;
   position: fixed;
-  z-index: 20;
+  z-index: 5;
   background-color: white;
   width: 100%;
   align-items: center;
@@ -25,7 +29,7 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  padding-left: 24px;
+  margin-left: 1.5rem;
 }
 
 .logo img {
@@ -36,16 +40,19 @@ header {
   font-size: 1rem;
 }
 
+header nav {
+  margin-right: 1.5rem;
+}
+
 header nav ul{
   list-style: none;
   display: flex;
-  padding-right: 24px;
 }
 
 header nav a{
   color: black;
   text-decoration: none;
-  padding-left: 16px;
+  padding-left: 1rem;
   font-size: 1rem;
 }
 
@@ -59,6 +66,20 @@ header nav a{
  }
 }
 
+/* main */
+
+.left{
+  width: 60%;
+  padding: 32px 24px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+
 /* banner section */
 
 
@@ -69,47 +90,47 @@ header nav a{
   justify-content: space-between;
 }
 
-.left{
-  width: 60%;
-  padding: 32px 24px;
-  border: 2px solid black;
-}
+
 
 .banner img {
   max-width: 100%;
   max-height: 100%;
 }
 
-.right {
-  display: flex;
-  flex-direction: column;
-  width: 35%;
-  border: 2px solid black;
-}
 
-button {
-  background-color: hsla(0, 0%, 25%, 1);
-  display: flex;
-  color: white;
-  margin-top: 1rem;
-  margin-bottom: 6rem;
-  text-align: center;
-  line-height: 36px;
-  font-size: 1rem;
-  padding: 8px 7rem;
-  width: 20rem;
-  box-shadow: none;
+.banner .right {
+  justify-content: center;
 }
 
 .banner h1 {
-  color: hsla(0, 0%, 25%, 1);
   font-size: 2.5rem;
   margin-top: 6rem;
 }
 
 .banner p {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   margin-top: 0rem;
+}
+
+.grey {
+  background-color: RGB(175, 191, 255);
+}
+
+button {
+  background-color: RGB(178, 44, 36);
+  display: flex;
+  color: white;
+  text-align: center;
+  line-height: 36px;
+  font-size: 1.2rem;
+  padding: 0.5rem 7rem;
+  width: 20rem;
+  box-shadow: none;
+  transition-property: background-color;
+}
+
+button:hover {
+  background-color: RGB(255, 63, 52);
 }
 
 /* information section */
@@ -124,23 +145,35 @@ button {
 }
 
 .newsitem {
-  border: 1px solid black;
   display: flex;
-  padding: 20px;
+  align-items: center;
+  padding: 2rem 1rem 1rem 1rem;
 }
 
 .newsitem img {
   width: 35%;
-  height: 35%
+  height: auto;
+  margin-right: 1rem;
 }
 
 .newsitem .text {
   width: 65%;
 }
 
-.grey {
-  background-color: hsla(0, 0%, 85%, 1);
+.newsitem p{
+  font-size: 1.2rem;
 }
+
+.newsitem a {
+  font-size: 1.2rem;
+  color: blue;
+  text-decoration: none;
+}
+
+.name {
+  font-size: 0.9rem;
+}
+
 
 /* Courses section */
 
@@ -149,29 +182,44 @@ button {
  text-align: center;
 }
 
-.coursesection .title span{
+.coursesection h1 {
   font-size: 2rem;
+  padding: 2rem 0rem 1rem 0rem;
+  margin-top: auto;
 }
 
 .courses {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 2rem 3.5rem 1rem 3.5rem;
-  width: 100%;
-  border: 2px solid red;
+  margin-top: auto;
 }
 
 .course {
-  border: 2px solid black;
   display: flex;
   flex-direction: column;
-  flex-basis: 25%;
+  flex-basis: 30%;
   margin: 1rem;
+  background-color: white;
 }
 
 .course img {
   width: 100%;
+}
+
+.courseinfo {
+  padding: 1rem;
+  background-color: white;
+  text-align: left;
+
+}
+
+.course h3, .course span, .course p {
+  margin-left: 1.2rem;
+}
+
+.course span, p {
+  font-size: 1.2rem;
 }
 
 /* thesis exhibit section */
@@ -182,7 +230,7 @@ button {
 }
 
 .thesisexhibit .title span{
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 
@@ -192,6 +240,7 @@ video {
 
 .exhibit {
   display: flex;
+  margin-top: 2rem;
 }
 
 .exhibit img {
@@ -205,12 +254,17 @@ video {
   text-align: left;
 }
 
+.thesis h2, .thesis p {
+  text-align: left;
+}
+
 /* footer */
 
 Footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-top: 1px solid RGB(175, 191, 255);
 }
 
 footer span {
